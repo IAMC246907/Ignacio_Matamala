@@ -1,15 +1,30 @@
-### Reconecedor de caras (Visión Artificial)
+# Reconocedor de Caras (Visión Artificial)
 
- Se hace uso del modelo haarcascade_frontalface_default.xml, el cual está disponible en el repositorio GitHub de OpenCV y ya está entrenado, y reconoce caras con cierta exactitud.
-Clasificador disponible en el repositorio de github de opencv: https://github.com/kipr/opencv/tree/master/data/haarcascades
+## Descripción
+El proyecto se centra en el reconocimiento facial haciendo uso del modelo pre-entrenado 'haarcascade_frontalface_default.xml' disponible en el repositorio GitHub de OpenCV. El modelo es capaz de identificar caras con precisión.
 
-En el paso #2 además se enmarcan todas las caras que se logra reconocer con el modelo, y se recorta cada una de ellas.
+## Pasos del Proyecto
 
-En el paso #3 se separan los canales B, G y R para cada una de las imágenes recortadas, cada canal se almacena en un archivo independiente.
+1. **Modelo y Repositorio**
+    - El clasificador 'haarcascade_frontalface_default.xml' está disponible en el repositorio de OpenCV [aquí](https://github.com/kipr/opencv/tree/master/data/haarcascades).
 
-En el paso #4 se ecualizan los canales de cada una de las imágenes recortadas.
+2. **Detección y Recorte de Caras**
+    - Se utiliza el modelo para detectar y recortar las caras identificadas.
 
-Los pasos #5 y #6 se aplican para cada una de las imágenes recortadas.
+3. **Manipulación de Imágenes**
+    - Los canales B, G y R de cada imagen recortada se separan y se almacenan en archivos independientes.
+    - Ecualización de los canales de las imágenes recortadas.
 
-Link de cuaderno alojado en Google Colab:
-https://colab.research.google.com/drive/1YOcYCZc23pBhgmXZLv1XL8KTk80dBENl?usp=sharing
+4. **Procesamiento Individual de Imágenes**
+    - Se aplican procesos adicionales (Pasos 5 y 6) a cada imagen recortada.
+
+## Cuaderno en Google Colab
+Puedes acceder al cuaderno del proyecto en Google Colab [aquí](https://colab.research.google.com/drive/1YOcYCZc23pBhgmXZLv1XL8KTk80dBENl?usp=sharing). Las bibliotecas utilizadas son: cv2, matplotlib y numpy.
+
+## Imagen
+La imagen utilizada se llama "reconocedor de caras" y está alojada en Google Colab y en este proyecto.
+
+## Librerías y Herramientas
+- cv2
+- matplotlib
+- numpy
